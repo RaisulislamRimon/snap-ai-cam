@@ -14,6 +14,10 @@ how to run this project:
 1. open cmd(command prompt) in windows inside this project folder(security).
 
 2. then run this command:
+        first download & install python, then run these commands: 
+                pip install opencv-python
+                pip install flask
+                pip install -r requirements.txt
         
         python app.py
 
