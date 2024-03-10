@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            background-color: green;
+            color: whitesmoke;
+            padding: 10px 25px 10px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            /* text-align: center;*/
+        }
+        button:hover {
+            cursor: pointer;
+            color: green;
+            background-color: yellow;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <br />
+    <div>
+        <button onclick="startPreview()">Start Preview</button>    
+    </div>
+    
+
+    <script>
+        function startPreview() {
+            window.location.href = "/preview";  // Redirect to the preview page
+        }
+    </script>
+</body>
+</html>

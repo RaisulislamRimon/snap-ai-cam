@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Page</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 100vh;
+            margin: 0;*/
+        }
+        img {
+            width: 75%;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;*/
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            background-color: green;
+            color: whitesmoke;
+            padding: 10px 25px 10px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            /* text-align: center;*/
+        }
+        button:hover {
+            cursor: pointer;
+            color: green;
+            background-color: yellow;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Preview Page</h1>
+    <h2></h2>
+    <div>
+        <button onclick="gotoHomepage()">
+            Click here to go to the home-page
+        </button>    
+    </div>
+    <!-- Add your video preview or embed code here -->
+    <img src="{{ url_for('video_feed') }}" alt="Live Video Feed">
+
+     <script>
+        function gotoHomepage() {
+            // window.location.href = "/";  // Redirect to the home page
+            window.location.href = "/close_camera";  // Redirect to the route that closes the camera
+
+        }
+    </script>
+</body>
+</html>

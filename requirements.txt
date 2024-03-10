@@ -30,3 +30,5 @@ trio-websocket==0.10.3
 urllib3==2.0.4
 w3lib==2.1.2
 wsproto==1.2.0
+Flask==2.0.1
+opencv-python==4.5.3
