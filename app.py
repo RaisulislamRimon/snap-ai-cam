@@ -51,6 +51,19 @@ def index():
     return render_template("index.html")
 
 
+#
+#
+# hudai
+@app.route("/api/hello")
+def hello():
+    return "Hello from Flask on Vercel!"
+
+
+# hudai
+#
+#
+
+
 @app.route("/video_feed")
 def video_feed():
     return Response(
